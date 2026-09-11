@@ -1,0 +1,100 @@
+/* ============ DOCUMENT STYLES ============ */
+.doc-stack { display: flex; flex-direction: column; gap: 14px; }
+.card { border-radius: 10px; overflow: hidden; position: relative; }
+
+/* --- Passport --- */
+.passport {
+  background: linear-gradient(160deg, #f5efe0 0%, #ede5d0 55%, #e8dfc8 100%);
+  color: #1a1a2e; font-family: 'Georgia', serif;
+  padding: 22px 26px; min-height: 420px;
+  border: 2px solid #8b7a4a;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.pp-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.pp-emblem { width: 44px; height: 44px; border-radius: 50%; background: radial-gradient(circle, #2a3a6a, #1a2444); display: flex; align-items: center; justify-content: center; color: #d4af37; font-size: 20px; font-weight: 900; border: 2px solid #d4af37; }
+.pp-title { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #3a3a5a; }
+.pp-title b { display: block; font-size: 14px; color: #1a1a2e; }
+.pp-body { display: flex; gap: 20px; }
+.pp-photo { width: 120px; height: 150px; background: #d4cfc0; border: 2px solid #8b7a4a; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+.pp-photo img { width: 100%; height: 100%; object-fit: cover; }
+.photo-ph { font-size: 11px; color: #8b7a4a; font-weight: 700; letter-spacing: 0.1em; }
+.pp-fields { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; align-content: start; }
+.pp-f { font-size: 11px; }
+.pp-f-label { font-size: 9px; font-weight: 700; letter-spacing: 0.08em; color: #6b6b8a; text-transform: uppercase; }
+.pp-f-val { font-size: 13px; font-weight: 600; color: #1a1a2e; }
+.pp-mrz { margin-top: 18px; padding: 12px 0 4px; border-top: 1px solid #8b7a4a; }
+.mrz-line { font-family: 'Courier New', monospace; font-size: 15px; letter-spacing: 0.06em; color: #1a1a2e; white-space: pre; overflow-x: auto; }
+.passport .microtext { position: absolute; bottom: 4px; left: 0; right: 0; font-size: 5px; letter-spacing: 0.02em; color: rgba(26,26,46,0.25); white-space: nowrap; overflow: hidden; }
+
+/* --- Driver License --- */
+.license {
+  background: linear-gradient(145deg, #f8f6f0 0%, #f0ede4 40%, #e8e4d8 100%);
+  color: #1a1a2e; font-family: 'Arial', sans-serif;
+  padding: 18px 22px; border-radius: 10px;
+  border: 2px solid #7a8aaa;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+  min-height: 240px;
+}
+.license .lic-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.lic-state { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; color: #3a5a8a; }
+.lic-state b { display: block; font-size: 13px; color: #1a2a4a; }
+.lic-type-badge { background: #2a4a7a; color: #fff; font-size: 9px; font-weight: 800; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; }
+.lic-body { display: flex; gap: 16px; }
+.lic-photo { width: 90px; height: 110px; background: #d0d4dc; border: 1.5px solid #7a8aaa; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+.lic-photo img { width: 100%; height: 100%; object-fit: cover; }
+.lic-fields { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; align-content: start; }
+.lic-f { font-size: 11px; }
+.lic-f-label { font-size: 8px; font-weight: 700; letter-spacing: 0.06em; color: #6a7a9a; text-transform: uppercase; }
+.lic-f-val { font-size: 12px; font-weight: 600; color: #1a1a2e; }
+.lic-bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(122,138,170,0.3); }
+.lic-qr { width: 60px; height: 60px; }
+.lic-sign { font-family: 'cursive', cursive; font-size: 16px; color: #2a3a5a; }
+.license .microtext { position: absolute; bottom: 3px; left: 0; right: 0; font-size: 5px; color: rgba(26,26,46,0.2); white-space: nowrap; overflow: hidden; }
+
+/* --- License Back --- */
+.license-back {
+  background: linear-gradient(145deg, #e8e4d8, #d8d4c8);
+  padding: 18px 22px; color: #1a1a2e; font-family: 'Arial', sans-serif;
+}
+
+/* --- National ID --- */
+.nid {
+  background: linear-gradient(160deg, #f8f5f0 0%, #f0ece4 50%, #e8e2d8 100%);
+  color: #1a1a2e; font-family: 'Arial', sans-serif;
+  padding: 20px 24px; border: 2px solid #8a2a3a;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35); min-height: 260px;
+}
+.nid-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.nid-emblem { width: 42px; height: 42px; border-radius: 50%; background: radial-gradient(circle, #8a1a2a, #5a0a1a); display: flex; align-items: center; justify-content: center; border: 2px solid #d4af37; }
+.nid-emblem-inner { color: #d4af37; font-size: 18px; }
+.nid-title { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #5a2a3a; }
+.nid-title b { display: block; font-size: 13px; color: #1a1a2e; }
+.nid-body { display: flex; gap: 16px; }
+.nid-photo { width: 100px; height: 124px; background: #d8d0c8; border: 1.5px solid #8a2a3a; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+.nid-photo img { width: 100%; height: 100%; object-fit: cover; }
+.nid-fields { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 5px 14px; align-content: start; }
+.nid-f { font-size: 11px; }
+.nid-f-label { font-size: 8px; font-weight: 700; letter-spacing: 0.06em; color: #7a4a5a; text-transform: uppercase; display: block; }
+.nid-f-val { font-size: 12px; font-weight: 600; color: #1a1a2e; }
+.nid-right { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.nid-chip { width: 36px; height: 26px; background: linear-gradient(135deg, #d4af37, #a88a2a); border-radius: 4px; border: 1px solid #8a6a1a; position: relative; overflow: hidden; }
+.chip-lines { position: absolute; inset: 4px; background: repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,0.15) 3px, rgba(0,0,0,0.15) 4px); }
+.nid-band { margin-top: 14px; padding: 8px 12px; background: linear-gradient(90deg, #1a2a4a, #2a4a7a, #1a2a4a); border-radius: 6px; display: flex; align-items: center; justify-content: space-between; }
+.nid-band-txt { font-size: 8px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.8); }
+.nid-holo span { background: linear-gradient(90deg, #ff0, #0ff, #f0f, #ff0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 10px; font-weight: 900; letter-spacing: 0.1em; }
+.nid-back { background: linear-gradient(160deg, #f0ece4, #e0dcd0); padding: 20px 24px; color: #1a1a2e; font-family: 'Arial', sans-serif; }
+.nid-sign { margin: 16px 0; }
+.nid-sign-line { width: 200px; height: 1px; background: #8a2a3a; margin-bottom: 4px; }
+.nid-sign-cap { font-size: 9px; color: #7a4a5a; }
+
+/* --- Shared doc elements --- */
+.back-title { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: #3a3a5a; margin-bottom: 10px; }
+.back-notes { font-size: 10px; color: #4a4a6a; line-height: 1.6; }
+.back-notes p { margin: 4px 0; }
+.back-stripes { height: 6px; background: repeating-linear-gradient(90deg, #d4af37 0px, #d4af37 8px, transparent 8px, transparent 16px); margin: 12px 0; border-radius: 3px; }
+.back-foot { font-size: 9px; font-weight: 700; letter-spacing: 0.08em; color: #6a6a8a; margin-top: 10px; }
+.microtext { font-size: 5px; letter-spacing: 0.02em; color: rgba(26,26,46,0.25); white-space: nowrap; overflow: hidden; }
+
+/* --- QR & Barcode containers --- */
+.qr-wrap { display: flex; align-items: center; justify-content: center; }
+.barcode-wrap { display: flex; align-items: center; justify-content: center; }
