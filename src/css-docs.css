@@ -26,36 +26,69 @@
 .mrz-line { font-family: 'Courier New', monospace; font-size: 15px; letter-spacing: 0.06em; color: #1a1a2e; white-space: pre; overflow-x: auto; }
 .passport .microtext { position: absolute; bottom: 4px; left: 0; right: 0; font-size: 5px; letter-spacing: 0.02em; color: rgba(26,26,46,0.25); white-space: nowrap; overflow: hidden; }
 
-/* --- Driver License --- */
-.license {
-  background: linear-gradient(145deg, #f8f6f0 0%, #f0ede4 40%, #e8e4d8 100%);
-  color: #1a1a2e; font-family: 'Arial', sans-serif;
-  padding: 18px 22px; border-radius: 10px;
-  border: 2px solid #7a8aaa;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
-  min-height: 240px;
+/* ============ CALIFORNIA DRIVER LICENSE ============ */
+.ca-front {
+  background: linear-gradient(155deg, #efe8d6 0%, #e6decb 35%, #dcd3bf 70%, #d4cab4 100%);
+  color: #2b2b33; font-family: 'Arial', 'Helvetica', sans-serif;
+  padding: 20px 26px 14px; border-radius: 12px;
+  border: 2px solid #b9ae97;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+  min-height: 300px; overflow: hidden;
 }
-.license .lic-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.lic-state { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; color: #3a5a8a; }
-.lic-state b { display: block; font-size: 13px; color: #1a2a4a; }
-.lic-type-badge { background: #2a4a7a; color: #fff; font-size: 9px; font-weight: 800; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; }
-.lic-body { display: flex; gap: 16px; }
-.lic-photo { width: 90px; height: 110px; background: #d0d4dc; border: 1.5px solid #7a8aaa; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
-.lic-photo img { width: 100%; height: 100%; object-fit: cover; }
-.lic-fields { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; align-content: start; }
-.lic-f { font-size: 11px; }
-.lic-f-label { font-size: 8px; font-weight: 700; letter-spacing: 0.06em; color: #6a7a9a; text-transform: uppercase; }
-.lic-f-val { font-size: 12px; font-weight: 600; color: #1a1a2e; }
-.lic-bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(122,138,170,0.3); }
-.lic-qr { width: 60px; height: 60px; }
-.lic-sign { font-family: 'cursive', cursive; font-size: 16px; color: #2a3a5a; }
-.license .microtext { position: absolute; bottom: 3px; left: 0; right: 0; font-size: 5px; color: rgba(26,26,46,0.2); white-space: nowrap; overflow: hidden; }
+.ca-ca { position: absolute; right: 90px; top: 50px; pointer-events: none; }
+.ca-bear { position: absolute; right: 24px; top: 130px; opacity: 0.85; pointer-events: none; }
+.ca-floral { position: absolute; left: 18px; bottom: 26px; pointer-events: none; }
 
-/* --- License Back --- */
-.license-back {
-  background: linear-gradient(145deg, #e8e4d8, #d8d4c8);
-  padding: 18px 22px; color: #1a1a2e; font-family: 'Arial', sans-serif;
+.ca-head { display: flex; align-items: flex-end; gap: 18px; padding-right: 120px; }
+.ca-name { font-size: 34px; font-weight: 900; letter-spacing: -0.5px; color: #1c1c22; line-height: 1; }
+.ca-usa { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: #4a4a55; margin-left: 6px; vertical-align: 20px; }
+.ca-kind { font-size: 14px; font-weight: 800; letter-spacing: 0.1em; color: #1c1c22; }
+.ca-rule { flex: 1; height: 3px; background: linear-gradient(90deg, #c9a227 0%, #c9a227 100%); border-bottom: 1px solid rgba(180,140,30,0.5); margin-bottom: 6px; }
+
+.ca-main { display: flex; gap: 18px; margin-top: 14px; }
+.ca-left { display: flex; flex-direction: column; gap: 10px; flex-shrink: 0; }
+.ca-photo { width: 108px; height: 134px; background: repeating-linear-gradient(45deg, #d8d2c2, #d8d2c2 3px, #cfc9b9 3px, #cfc9b9 6px); border: 1.5px solid #a89e86; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.ca-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.ca-donor { width: 40px; height: 40px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #e8484a, #b02024 70%); display: flex; align-items: center; justify-content: center; align-self: center; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.3); }
+.ca-donor-txt { color: #fff; font-size: 8px; font-weight: 900; letter-spacing: 0.05em; }
+
+.ca-stampwrap { align-self: center; }
+.ca-stamp { border: 2.5px solid #1c3fa0; padding: 4px 14px; text-align: center; background: rgba(255,255,255,0.35); transform: rotate(-1.5deg); }
+.ca-stamp-red, .ca-stamp-green { height: 2.5px; }
+.ca-stamp-red { background: #c0282a; margin-bottom: 3px; }
+.ca-stamp-green { background: #2a7a3a; margin-top: 3px; }
+.ca-stamp-word { color: #1c3fa0; font-size: 15px; font-weight: 900; letter-spacing: 0.12em; }
+
+.ca-grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 3px 22px; align-content: start; }
+.ca-f { font-size: 12px; display: flex; gap: 6px; align-items: baseline; }
+.ca-f-wide { grid-column: span 2; }
+.ca-l { font-size: 10px; font-weight: 800; letter-spacing: 0.05em; color: #1c3fa0; min-width: 30px; }
+.ca-v { font-size: 13px; font-weight: 600; color: #1c1c22; }
+.ca-classrow { grid-column: span 2; display: flex; gap: 8px; align-items: baseline; }
+.ca-classv { font-size: 16px; font-weight: 900; }
+.ca-endl { min-width: 34px; }
+.ca-f-donum { grid-column: span 2; }
+.ca-dl { font-size: 9px; font-weight: 800; letter-spacing: 0.08em; color: #1c3fa0; border: 1px solid #1c3fa0; padding: 2px 8px; }
+.ca-micro { margin-top: 12px; font-size: 5px; letter-spacing: 0.03em; color: rgba(43,43,51,0.28); white-space: nowrap; overflow: hidden; }
+
+/* ---- back ---- */
+.ca-back {
+  background: linear-gradient(160deg, #f4f2ec 0%, #e9e6dd 50%, #ddd8cc 100%);
+  border-radius: 12px; border: 2px solid #b9ae97;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+  padding: 0 0 16px; color: #1c1c22; font-family: 'Arial', sans-serif;
+  overflow: hidden;
 }
+.ca-backbar { background: #fff; padding: 6px 14px 2px; border-bottom: 1px solid #cfc9b9; }
+.ca-magstripe { height: 34px; background: linear-gradient(180deg, #0d0d10 0%, #26262c 50%, #0d0d10 100%); margin-top: 0; }
+.ca-backbody { display: flex; gap: 24px; padding: 16px 22px 10px; align-items: flex-start; }
+.ca-backleft { font-size: 12px; line-height: 1.9; }
+.ca-backleft b { font-weight: 800; letter-spacing: 0.02em; }
+.ca-backright { flex: 1; font-size: 11px; line-height: 1.55; color: #2b2b33; }
+.ca-back2d { display: flex; align-items: center; gap: 18px; padding: 8px 22px 0; }
+.ca-2d-cap { font-size: 9px; font-weight: 800; letter-spacing: 0.12em; color: #4a4a55; }
+.ca-2d-box { background: #fff; padding: 4px; border: 1px solid #cfc9b9; }
 
 /* --- National ID --- */
 .nid {
